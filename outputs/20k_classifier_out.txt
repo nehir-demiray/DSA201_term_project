@@ -1,0 +1,38 @@
+Labeled (AGN+stellar): 8512
+Unlabeled (NaN):       6607
+'other':               4881
+source_class
+stellar    4269
+AGN        4243
+
+=== Held-out test performance (1=AGN, 0=stellar) ===
+              precision    recall  f1-score   support
+
+     stellar      0.932     0.896     0.914      1067
+         AGN      0.899     0.934     0.916      1061
+
+    accuracy                          0.915      2128
+   macro avg      0.916     0.915     0.915      2128
+weighted avg      0.916     0.915     0.915      2128
+
+Confusion matrix [rows=true, cols=pred]:
+[[956 111]
+ [ 70 991]]
+ROC AUC: 0.9638
+
+Feature importances (MDI):
+  abs_glat     0.544
+  hard_hm      0.133
+  hard_hs      0.121
+  hard_ms      0.108
+  log_flux_b   0.094
+
+=== Predictions on unlabeled (NaN) (n=6607) ===
+  AGN:     3829  (58.0%)
+  stellar: 2778  (42.0%)
+Wrote: outputs/20k_unlabeled_predictions.csv
+
+=== Predictions on 'other' (n=4881) ===
+  AGN:     1515  (31.0%)
+  stellar: 3366  (69.0%)
+Wrote: outputs/20k_other_predictions.csv

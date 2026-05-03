@@ -19,7 +19,7 @@ import pyvo as vo
 warnings.filterwarnings("ignore", category=UserWarning)
 
 # ── Configuration ──────────────────────────────────────────────
-N_SOURCES        = 5000    # top N by detection significance
+N_SOURCES        = 20000    # top N by detection significance
 MIN_SIGNIFICANCE = 3.0    # minimum detection significance
 XMATCH_RADIUS    = 3.0    # SIMBAD cross-match radius (arcsec)
 OUTPUT_CSV       = "data/csc21_simbad_enriched.csv"
