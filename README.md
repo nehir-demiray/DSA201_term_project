@@ -1,4 +1,4 @@
-
+# DISCLAIMER: AI assistance was used in the generation of this document, see: https://claude.ai/share/3c256524-dc9e-4963-9e21-bcd8bbb792e7
 # DSA201_term_project
 Term Project repository for the DSA210 Spring 2026 course
 
